@@ -55,9 +55,9 @@ done
 
 lazy(){
     if "${FORMAT}"; then
-        terraform fmt -diff -check -recursive "${DIR}"
+        terraform fmt "${DIR}"
         #simple validation
-        terraform validate "${DIR}"
+        terraform validate -backend=false "${DIR}"
     fi
 
     if "${VALIDATE}"; then
