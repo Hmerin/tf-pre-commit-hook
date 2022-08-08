@@ -2,7 +2,8 @@
     name: Formats the terraform code
     description: This formats the tf code
     entry: lazy-tf.sh -f
-    types: ["directory"]
+    types: [file]
+    files: \.(tf|tfvars)$
     language: script
     #fail_fast: false
     verbose: true
