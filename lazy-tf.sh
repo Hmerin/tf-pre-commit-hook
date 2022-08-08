@@ -57,7 +57,7 @@ lazy(){
     if "${FORMAT}"; then
         terraform fmt "${DIR}"
         #simple validation
-        terraform validate -backend=false "${DIR}"
+        terraform validate "${DIR}"
     fi
 
     if "${VALIDATE}"; then
