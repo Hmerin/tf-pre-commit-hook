@@ -1,0 +1,11 @@
+-   id: tf-format
+    name: Formats the terraform code
+    description: This formats the tf code
+    entry: lazy-tf.sh -f
+    types: ["directory"]
+    language: script
+    #fail_fast: false
+    verbose: true
+    args: []
+    stages:
+      - "commit"
